@@ -11,16 +11,27 @@
     <div class="navbar">
         <h2 class="logo">Promag</h2>
         <div class="buttons">
+            {%if is_logged_in == True%}
+            <a href="dashboard">dashboard</a>
+            <a href="logout">Logout</a>
+            {%endif%}
+            {%if is_logged_in == False%}
             <a href="login">Log in</a>
             <a href="signup">Sign up</a>
+            {%endif%}
         </div>
     </div>
     <div class="main-section">
         <h1 class="heading">Promage: <span class="an">All in one solution for project-management</span></h1>
         <h3 class="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique alias, delectus at quaerat dignissimos, quae suscipit vero distinctio fugit consequuntur laborum numquam aliquid perspiciatis beatae, hic libero optio excepturi harum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias quo qui veniam obcaecati, ab impedit? Natus vitae, soluta modi, ratione vero voluptatum consequatur magni odio ut placeat cupiditate, architecto inventore?</h3>
         <div class="buttons-lg">
+            {%if is_logged_in == True%}
+            <a href="dashboard">Go to my dashboard</a>
+            {%endif%}
+            {%if is_logged_in == False%}
             <a href="login">Log in</a>
             <a href="signup">Sign up</a>
+            {%endif%}
         </div>
     </div>
 </body>

@@ -83,6 +83,10 @@ label{
     font-size: 20px;
 }
 
+.message{
+    margin-left: 10%;
+}
+
 .heading-login{
     text-align: center;
 }

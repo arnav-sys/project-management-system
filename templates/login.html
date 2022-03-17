@@ -14,13 +14,14 @@
             <a href="signup">Sign up</a>
         </div>
     </div>
-    <form action="">
+    <form action="login" method="POST">
         <h1 class="heading-login">Login</h1>
         <label for="">Email</label>
-        <input type="text" name="" id="">
+        <input type="text" name="Email" id="">
         <label for="">Password</label>
-        <input type="text" name="" id="">
+        <input type="text" name="Password" id="">
         <input class="submit" type="submit">
+        <h3 class="message">{{message}}</h3>
     </form>
 </body>
 </html>
